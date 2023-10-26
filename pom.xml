@@ -36,10 +36,10 @@
                     -->
                     <feature-packs>
                         <feature-pack>
-                            <location>org.jboss.eap:wildfly-galleon-pack:${jboss.xp.galleon.feature.pack.version}</location>
+                            <location>org.jboss.eap:wildfly-ee-galleon-pack:${jboss.eap.version}</location>
                         </feature-pack>
                         <feature-pack>
-                            <location>org.jboss.eap:wildfly-ee-galleon-pack:${jboss.eap.version}</location>
+                            <location>org.jboss.eap:wildfly-galleon-pack:${jboss.xp.galleon.feature.pack.version}</location>
                         </feature-pack>
                     </feature-packs>
                     <hollow-jar>true</hollow-jar>
@@ -51,7 +51,9 @@
                         </artifact>
                     </overridden-server-artifacts>
                     -->
+                    <!--
                     <legacy-patch-cli-script>apply-patch.cli</legacy-patch-cli-script>
+                    -->
                 </configuration>
                 <executions>
                     <execution>
